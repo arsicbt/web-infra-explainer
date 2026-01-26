@@ -41,7 +41,7 @@ const translations: Record<Language, Record<string, string>> = {
     'simple.intro': 'Let\'s start with the most basic web infrastructure: a single server hosting www.foobar.com. This setup, while simple, introduces us to all the fundamental concepts we need to understand.',
     
     'simple.server.title': 'What is a Server?',
-    'simple.server.desc': 'A server is a computer (physical or virtual) that provides services to other computers over a network. In our case, it hosts all the components needed to serve our website. Our server is accessible at IP address 8.8.8.8.',
+    'simple.server.desc': 'A server is a computer (physical or virtual) that provides services to other computers over a network. In our case, it hosts all the components needed to serve our website. Our server is accessible at IP address 8.8.8.8. It generally hosted in Datacenter and runs on OS.',
     
     'simple.domain.title': 'Domain Name',
     'simple.domain.desc': 'The domain name (foobar.com) is a human-readable address that maps to our server\'s IP address. Instead of remembering 8.8.8.8, users can simply type www.foobar.com.',
@@ -185,7 +185,7 @@ const translations: Record<Language, Record<string, string>> = {
     'simple.intro': 'Commençons par l\'infrastructure web la plus basique : un seul serveur hébergeant www.foobar.com. Cette configuration, bien que simple, nous présente tous les concepts fondamentaux que nous devons comprendre.',
     
     'simple.server.title': 'Qu\'est-ce qu\'un Serveur ?',
-    'simple.server.desc': 'Un serveur est un ordinateur (physique ou virtuel) qui fournit des services à d\'autres ordinateurs via un réseau. Dans notre cas, il héberge tous les composants nécessaires pour servir notre site web. Notre serveur est accessible à l\'adresse IP 8.8.8.8.',
+    'simple.server.desc': 'Un serveur est un ordinateur (physique ou virtuel) qui fournit des services à d\'autres ordinateurs via un réseau. Dans notre cas, il héberge tous les composants nécessaires pour servir notre site web. Notre serveur est accessible à l\'adresse IP 8.8.8.8. Ils sont généralement hébergés dans des data center et s execute grace à l OS',
     
     'simple.domain.title': 'Nom de Domaine',
     'simple.domain.desc': 'Le nom de domaine (foobar.com) est une adresse lisible par l\'homme qui correspond à l\'adresse IP de notre serveur. Au lieu de se souvenir de 8.8.8.8, les utilisateurs peuvent simplement taper www.foobar.com.',
