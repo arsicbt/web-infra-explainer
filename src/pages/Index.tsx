@@ -6,6 +6,7 @@ import IntroSection from '@/components/sections/IntroSection';
 import SimpleInfraSection from '@/components/sections/SimpleInfraSection';
 import DistributedInfraSection from '@/components/sections/DistributedInfraSection';
 import SecuredInfraSection from '@/components/sections/SecuredInfraSection';
+import GoogleRequestSection from '@/components/sections/GoogleRequestSection';
 import ConclusionSection from '@/components/sections/ConclusionSection';
 import Footer from '@/components/Footer';
 
@@ -20,6 +21,7 @@ const Index: React.FC = () => {
           <SimpleInfraSection />
           <DistributedInfraSection />
           <SecuredInfraSection />
+          <GoogleRequestSection />
           <ConclusionSection />
         </main>
         <Footer />
