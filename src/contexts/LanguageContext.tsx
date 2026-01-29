@@ -15,6 +15,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.simple': 'Simple Infrastructure',
     'nav.distributed': 'Distributed Infrastructure',
     'nav.secured': 'Secured Infrastructure',
+    'nav.google': 'Google Request',
     'nav.conclusion': 'Conclusion',
     
     // Hero
@@ -149,6 +150,42 @@ const translations: Record<Language, Record<string, string>> = {
     
     'conclusion.cta': 'Keep Learning!',
     
+    // Section 6 - Google Request
+    'google.title': 'What Happens When You Type https://www.google.com?',
+    'google.subtitle': 'Interview Deep Dive',
+    'google.intro': 'This is one of the most common software engineering interview questions. It tests your understanding of the entire web stack—from DNS resolution to browser rendering. Let\'s break down exactly what happens when you press Enter.',
+    'google.interview.tip': 'This question is popular because it covers networking, security, infrastructure, and front-end concepts in a single scenario.',
+    
+    'google.dns.title': 'DNS Request',
+    'google.dns.desc': 'The Domain Name System (DNS) translates human-readable domain names into IP addresses. Your browser first checks its cache, then the OS cache, then queries a DNS resolver. The resolver contacts root servers, TLD servers (.com), and finally Google\'s authoritative DNS server to get the IP address.',
+    
+    'google.tcp.title': 'TCP/IP Connection',
+    'google.tcp.desc': 'Once the IP address is known, your browser initiates a TCP connection using the three-way handshake: SYN (client sends synchronize), SYN-ACK (server acknowledges and synchronizes), and ACK (client acknowledges). This establishes a reliable, ordered connection.',
+    
+    'google.firewall.title': 'Firewall',
+    'google.firewall.desc': 'The request passes through multiple firewalls—your local firewall, your ISP\'s firewall, and Google\'s network firewalls. Each firewall inspects the packet against security rules, filtering malicious traffic while allowing legitimate requests through.',
+    
+    'google.https.title': 'HTTPS/SSL',
+    'google.https.desc': 'Since the URL uses HTTPS, a TLS handshake occurs. The server presents its SSL certificate, the client verifies it against trusted Certificate Authorities, and both parties negotiate encryption keys. All subsequent data is encrypted, ensuring confidentiality and integrity.',
+    
+    'google.lb.title': 'Load Balancer',
+    'google.lb.desc': 'Google\'s load balancers receive the request and distribute it across thousands of servers worldwide. Using algorithms like round-robin, least connections, or geographic routing, the load balancer ensures optimal performance and prevents any single server from being overwhelmed.',
+    
+    'google.webserver.title': 'Web Server',
+    'google.webserver.desc': 'The web server (like Nginx or Google\'s custom GFE - Google Front End) receives the HTTP request. It handles SSL termination, serves static content (CSS, JavaScript, images), and routes dynamic requests to the application server.',
+    
+    'google.appserver.title': 'Application Server',
+    'google.appserver.desc': 'The application server executes Google\'s search logic. It parses your query, processes search algorithms, applies personalization based on your profile, and assembles the search results. This is where the "magic" of Google Search happens.',
+    
+    'google.database.title': 'Database',
+    'google.database.desc': 'The application server queries distributed databases and indexing systems (like Bigtable and Spanner) that store the web\'s indexed content. These databases are optimized for extremely fast read operations across petabytes of data.',
+    
+    'google.render.title': 'Browser Rendering',
+    'google.render.desc': 'The server sends back an HTML response. Your browser parses the HTML, constructs the DOM tree, fetches CSS and JavaScript resources, builds the CSSOM, creates the render tree, and finally paints the pixels on your screen. The search results appear in milliseconds.',
+    
+    'google.summary.title': 'The Complete Journey',
+    'google.summary.desc': 'In just a few hundred milliseconds, your request traveled through DNS resolution, established a secure TCP connection, passed through multiple firewalls, encrypted via TLS, was load-balanced across servers, processed by web and application servers, queried massive databases, and rendered beautifully in your browser. Understanding this flow is essential for any software engineer.',
+    
     // Footer
     'footer.project': 'Holberton School - Web Infrastructure Design Project',
     'footer.copyright': '© 2025 Educational Content',
@@ -159,6 +196,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.simple': 'Infrastructure Simple',
     'nav.distributed': 'Infrastructure Distribuée',
     'nav.secured': 'Infrastructure Sécurisée',
+    'nav.google': 'Requête Google',
     'nav.conclusion': 'Conclusion',
     
     // Hero
@@ -292,6 +330,42 @@ const translations: Record<Language, Record<string, string>> = {
     'conclusion.final': 'Comprendre ces concepts est fondamental pour devenir un ingénieur logiciel compétent. La capacité de concevoir, mettre en œuvre et dépanner l\'infrastructure web est une compétence précieuse dans le monde actuel axé sur le cloud.',
     
     'conclusion.cta': 'Continuez à Apprendre !',
+    
+    // Section 6 - Google Request
+    'google.title': 'Que se passe-t-il quand vous tapez https://www.google.com ?',
+    'google.subtitle': 'Question d\'Entretien',
+    'google.intro': 'C\'est l\'une des questions d\'entretien les plus courantes en ingénierie logicielle. Elle teste votre compréhension de toute la pile web—de la résolution DNS au rendu du navigateur. Analysons exactement ce qui se passe quand vous appuyez sur Entrée.',
+    'google.interview.tip': 'Cette question est populaire car elle couvre les concepts de réseau, sécurité, infrastructure et front-end en un seul scénario.',
+    
+    'google.dns.title': 'Requête DNS',
+    'google.dns.desc': 'Le système de noms de domaine (DNS) traduit les noms de domaine lisibles par l\'homme en adresses IP. Votre navigateur vérifie d\'abord son cache, puis le cache du système, puis interroge un résolveur DNS. Le résolveur contacte les serveurs racine, les serveurs TLD (.com), et finalement le serveur DNS autoritaire de Google pour obtenir l\'adresse IP.',
+    
+    'google.tcp.title': 'Connexion TCP/IP',
+    'google.tcp.desc': 'Une fois l\'adresse IP connue, votre navigateur initie une connexion TCP avec la poignée de main à trois voies : SYN (le client envoie synchronize), SYN-ACK (le serveur accuse réception et synchronise), et ACK (le client accuse réception). Cela établit une connexion fiable et ordonnée.',
+    
+    'google.firewall.title': 'Pare-feu',
+    'google.firewall.desc': 'La requête passe par plusieurs pare-feu—votre pare-feu local, celui de votre FAI, et les pare-feu réseau de Google. Chaque pare-feu inspecte le paquet selon des règles de sécurité, filtrant le trafic malveillant tout en laissant passer les requêtes légitimes.',
+    
+    'google.https.title': 'HTTPS/SSL',
+    'google.https.desc': 'Puisque l\'URL utilise HTTPS, une poignée de main TLS se produit. Le serveur présente son certificat SSL, le client le vérifie auprès des Autorités de Certification de confiance, et les deux parties négocient des clés de chiffrement. Toutes les données suivantes sont chiffrées, assurant confidentialité et intégrité.',
+    
+    'google.lb.title': 'Répartiteur de Charge',
+    'google.lb.desc': 'Les répartiteurs de charge de Google reçoivent la requête et la distribuent sur des milliers de serveurs dans le monde. En utilisant des algorithmes comme round-robin, least connections, ou routage géographique, le répartiteur assure des performances optimales.',
+    
+    'google.webserver.title': 'Serveur Web',
+    'google.webserver.desc': 'Le serveur web (comme Nginx ou le GFE personnalisé de Google) reçoit la requête HTTP. Il gère la terminaison SSL, sert le contenu statique (CSS, JavaScript, images), et route les requêtes dynamiques vers le serveur d\'application.',
+    
+    'google.appserver.title': 'Serveur d\'Application',
+    'google.appserver.desc': 'Le serveur d\'application exécute la logique de recherche de Google. Il analyse votre requête, traite les algorithmes de recherche, applique la personnalisation selon votre profil, et assemble les résultats. C\'est là que la "magie" de Google Search opère.',
+    
+    'google.database.title': 'Base de Données',
+    'google.database.desc': 'Le serveur d\'application interroge des bases de données distribuées et des systèmes d\'indexation (comme Bigtable et Spanner) qui stockent le contenu indexé du web. Ces bases sont optimisées pour des opérations de lecture extrêmement rapides sur des pétaoctets de données.',
+    
+    'google.render.title': 'Rendu Navigateur',
+    'google.render.desc': 'Le serveur renvoie une réponse HTML. Votre navigateur analyse le HTML, construit l\'arbre DOM, récupère les ressources CSS et JavaScript, construit le CSSOM, crée l\'arbre de rendu, et finalement peint les pixels sur votre écran. Les résultats apparaissent en millisecondes.',
+    
+    'google.summary.title': 'Le Voyage Complet',
+    'google.summary.desc': 'En quelques centaines de millisecondes, votre requête a voyagé à travers la résolution DNS, établi une connexion TCP sécurisée, passé plusieurs pare-feu, été chiffrée via TLS, répartie sur des serveurs, traitée par des serveurs web et d\'application, interrogé des bases massives, et rendue magnifiquement dans votre navigateur.',
     
     // Footer
     'footer.project': 'Holberton School - Projet de Conception d\'Infrastructure Web',

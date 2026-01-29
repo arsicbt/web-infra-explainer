@@ -21,6 +21,7 @@ const Navigation: React.FC = () => {
     { key: 'nav.simple', href: '#simple' },
     { key: 'nav.distributed', href: '#distributed' },
     { key: 'nav.secured', href: '#secured' },
+    { key: 'nav.google', href: '#google-request' },
     { key: 'nav.conclusion', href: '#conclusion' },
   ];
 
