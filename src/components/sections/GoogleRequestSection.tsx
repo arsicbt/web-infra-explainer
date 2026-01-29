@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import SectionWrapper from '../SectionWrapper';
 import SectionHeader from '../SectionHeader';
 import InfoCard from '../InfoCard';
+import GoogleRequestDiagram from '../diagrams/GoogleRequestDiagram';
 import { Search, Globe, Network, Shield, Lock, Shuffle, Server, Cpu, Database, Monitor } from 'lucide-react';
 
 const GoogleRequestSection: React.FC = () => {
@@ -37,37 +38,8 @@ const GoogleRequestSection: React.FC = () => {
       </div>
 
       {/* Request Flow Diagram */}
-      <div className="mb-16 glass rounded-2xl p-6 border border-border">
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex items-center gap-3 text-neon-cyan">
-            <Globe className="w-8 h-8" />
-            <span className="text-lg font-semibold">https://www.google.com</span>
-          </div>
-          <div className="w-0.5 h-8 bg-gradient-to-b from-neon-cyan to-neon-violet" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
-            {['DNS', 'TCP/IP', 'Firewall'].map((step, i) => (
-              <div key={step} className="glass rounded-lg p-3 text-center border border-neon-cyan/20">
-                <span className="text-sm font-medium text-neon-cyan">{i + 1}. {step}</span>
-              </div>
-            ))}
-          </div>
-          <div className="w-0.5 h-8 bg-gradient-to-b from-neon-violet to-neon-orange" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
-            {['HTTPS/SSL', 'Load Balancer', 'Web Server'].map((step, i) => (
-              <div key={step} className="glass rounded-lg p-3 text-center border border-neon-violet/20">
-                <span className="text-sm font-medium text-neon-violet">{i + 4}. {step}</span>
-              </div>
-            ))}
-          </div>
-          <div className="w-0.5 h-8 bg-gradient-to-b from-neon-orange to-neon-cyan" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
-            {['App Server', 'Database', 'Browser Render'].map((step, i) => (
-              <div key={step} className="glass rounded-lg p-3 text-center border border-neon-orange/20">
-                <span className="text-sm font-medium text-neon-orange">{i + 7}. {step}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="mb-16">
+        <GoogleRequestDiagram />
       </div>
 
       {/* Detailed Steps */}
